@@ -1,0 +1,4 @@
+[alias]
+	up = pull --rebase
+	fp = push origin HEAD
+	push-branch = push origin HEAD
