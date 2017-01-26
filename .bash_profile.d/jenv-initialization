@@ -1,0 +1,4 @@
+export PATH="$HOME/.jenv/bin:$PATH"
+
+# To enable shims and autocompletion for jenv (multiple java versions)
+if which jenv > /dev/null; then eval "$(jenv init -)"; fi

@@ -1,0 +1,7 @@
+# autocreate aliases for all machines in your ssh/config
+alias machine_list="cat ~/.ssh/config | egrep '^Host' | grep -v '\*' | cut -d ' ' -f 2"
+SSH=ssh
+for MACHINE in `machine_list`
+do
+    alias $MACHINE="TERM=xterm $SSH $MACHINE"
+done
